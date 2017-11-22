@@ -20,7 +20,10 @@ class AdminPostsController extends Controller
     {
         return view('admin.posts.create');
     }
-
+    public function store(Request $request)
+   {
+       Post::create($request->all());
+   }
     public function edit($id)
     {
         $data = ['id' => $id];
