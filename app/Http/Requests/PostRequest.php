@@ -4,6 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
+
 class PostRequest extends FormRequest
 {
     /**
@@ -15,6 +16,16 @@ class PostRequest extends FormRequest
     {
         return true;
     }
+    public function store(PostRequest$request)
+    {
+       //
+    }
+    public function update(PostRequest$request)
+    {
+
+     //
+    }
+
 
     /**
      * Get the validation rules that apply to the request.
