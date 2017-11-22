@@ -30,7 +30,7 @@
 
 <div class="row">
     <div class="col-lg-12">
-        <form role="form">
+
 
             <form action="/admin/posts" method="POST" role="form">
                 {{ csrf_field() }}
